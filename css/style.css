@@ -251,11 +251,7 @@ body {
   padding: 1rem;
 }
 /* work */
-.work-card {
-  /* border: solid 1px var(--black); */
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 28px rgba(0,0,0,0.22);
-  padding: 3rem;
-}
+
 .work-card-container{
   display: flex;
   flex-direction: column;
@@ -298,11 +294,6 @@ body {
   font-size: 1.8rem;
 }
 
-.project-title{
-  text-align: center;
-  font-size: 700;
-  font-size: 1.5rem;
-}
 .work-subtitle{
   margin:1rem;
   text-align: justify;

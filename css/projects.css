@@ -1,0 +1,31 @@
+.projects-title{
+    text-align: center;
+}
+.project-card{
+    box-shadow: 0 1px 25px rgba(146,161,176,.5);
+    margin:1rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+  }
+  .projects-grid{
+    display: grid;
+    grid-template-columns: 90vw;
+    max-width: 90vw;
+    margin: auto;
+    grid-gap: 1rem;
+  }
+  .project-image{
+    width:100%;
+  }
+
+  @media (min-width:768px) {
+      .projects-grid{
+    grid-template-columns: repeat(2,1fr);
+    max-width: 60vw;
+
+      }
+  }

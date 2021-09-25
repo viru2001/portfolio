@@ -7,14 +7,16 @@
   --orange: #ffa500;
   --gray: #f9fafb;
 }
+* {
+  margin: 0rem;
+  padding: 0rem;
+  font-family: "Open Sans", sans-serif;
 
+}
 html {
   scroll-behavior: smooth;
 }
-body {
-  font-family: "Open Sans", sans-serif;
-  margin: 0rem;
-}
+
 
 /* Navigation */
 .name {
@@ -37,7 +39,7 @@ body {
 
 .list-inline {
   display: inline;
-  padding: 1rem;
+  padding: 0.2rem;
 }
 
 .link {
@@ -339,11 +341,11 @@ body {
 
 /* footer */
 .footer{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
     background-color: var(--primary-color);
-  
+}
+.footer div{
+  text-align: center;
+  padding:1rem;
 }
 
 

@@ -1,5 +1,7 @@
-.projects-title{
-    text-align: center;
+.project-title{
+  font-weight: bold;
+    margin: 1rem;
+    font-size: 1.5rem;
 }
 .project-card{
     box-shadow: 0 1px 25px rgba(146,161,176,.5);
@@ -11,7 +13,7 @@
     justify-content: flex-end;
     
   }
-  .projects-grid{
+  #projects-grid{
     display: grid;
     grid-template-columns: 90vw;
     max-width: 90vw;
@@ -21,9 +23,18 @@
   .project-image{
     width:100%;
   }
-
+  .project-description{
+    margin: 0.5rem;
+    padding: 0.8rem;
+  }
+.mark{
+  border: solid 1px var(--primary-color);
+    color: var(--primary-color);
+    padding: 0.2rem;
+    margin: 0.8rem;
+}
   @media (min-width:768px) {
-      .projects-grid{
+      #projects-grid{
     grid-template-columns: repeat(2,1fr);
     max-width: 60vw;
 

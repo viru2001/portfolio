@@ -38,8 +38,8 @@ const projects = [
     name: "Cash Register",
     desc: "A web app which takes the bill amount and the cash paid as the input and gives the minimum number of notes of each denomination to be returned. Built using Vanilla JS, HTML and CSS.",
     mark: "markTen",
-    liveLink: "https://lucky-birthday-viresh.netlify.app",
-    sourceLink: "https://github.com/viru2001/lucky-birthday"
+    liveLink: "https://cash-register-viresh.netlify.app/",
+    sourceLink: "https://github.com/viru2001/cash-register"
   },
   {
     image: "./images/projects/goodshows.png",

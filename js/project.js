@@ -126,14 +126,33 @@ projects.map((project) => {
 
 
 
-  let liveDemoBtn = document.createElement("button");
+  // let liveDemoBtn = document.createElement("button");
+  // liveDemoBtn.className = "btn btn-primary";
+  // liveDemoBtn.innerHTML = "<a href="+project.liveLink+" target='_blank'>Live Demo </a>";
+  // projectCardDiv.appendChild(liveDemoBtn);
+  let liveDemoBtn = document.createElement("a");
   liveDemoBtn.className = "btn btn-primary";
-  liveDemoBtn.innerHTML = "<a href="+project.liveLink+" target='_blank'>Live Demo </a>";
+  liveDemoBtn.style.color = "#fff";
+  liveDemoBtn.style.textAlign = "center";
+  liveDemoBtn.style.textDecoration = "none";
+  liveDemoBtn.href = project.liveLink;
+  liveDemoBtn.target = "_blank";
+  liveDemoBtn.innerText = "Live Demo";
   projectCardDiv.appendChild(liveDemoBtn);
 
-  let sourceCodeBtn = document.createElement("button");
+  // let sourceCodeBtn = document.createElement("button");
+  // sourceCodeBtn.className = "btn btn-secondary";
+  // sourceCodeBtn.innerHTML = "<a href="+project.sourceLink+" target='_blank'>Source Code </a>";
+  // projectCardDiv.appendChild(sourceCodeBtn);
+
+  let sourceCodeBtn = document.createElement("a");
   sourceCodeBtn.className = "btn btn-secondary";
-  sourceCodeBtn.innerHTML = "<a href="+project.sourceLink+" target='_blank'>Source Code </a>";
+  sourceCodeBtn.style.color = "#6d28d9;";
+  sourceCodeBtn.style.textAlign = "center";
+  sourceCodeBtn.style.textDecoration = "none";
+  sourceCodeBtn.href = project.sourceLink;
+  sourceCodeBtn.target = "_blank";
+  sourceCodeBtn.innerText = "Source Code";
   projectCardDiv.appendChild(sourceCodeBtn);
 
 

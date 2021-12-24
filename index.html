@@ -5,51 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Viresh Fegade</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <meta name="description" content="Myself Viresh Fegade, This is homepage of my portfolio which shows my tech stack and also this page has link to my social media handles">
+    <meta name="keyword" content="portfolio, javascript,web developer,software developer,full stack developer,python,react">
+    <link rel="stylesheet" href="./styles/style.css" />
+    <!-- <link href="fonts/fontawesome/css/fontawesome.min.css" rel="stylesheet">  -->
+    <script type='text/javascript'>
+      //<![CDATA[ 
+      function loadCSS(e, t, n) {
+         "use strict"; 
+         var i = window.document.createElement("link"); 
+         var o = t || window.document.getElementsByTagName("script")[0]; 
+         i.rel = "stylesheet"; 
+         i.href = e; 
+         i.media = "only x"; 
+         o.parentNode.insertBefore(i, o); 
+         setTimeout(function () { i.media = n || "all" })
+         }
+         loadCSS("fonts/fontawesome/css/fontawesome.min.css");
+         loadCSS("fonts/fontawesome/css/brands.min.css");
+      //]]> 
+      </script>
+    <!-- <link href="fonts/fontawesome/css/brands.min.css" rel="stylesheet">  -->
+    <!-- <link href="fonts/fontawesome/stylesall.min.css" rel="stylesheet">  -->
+    <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/stylesall.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> -->
+  <link rel="icon" href="./media/favicon.webp">
+
   </head>
 
   <body>
+    <section class="header">
+      <nav class="navbar">
+        <h4 class="logo">Viresh Fegade</h4>
+        <ul class="nav-links">
+          <li class="active">
+            <a href="index.html">Home</a>
+          </li>
 
-    <!-- Navigation -->
-    <nav class="navigation">
-      <div class="name">Viresh</div>
-      <div>
-        <ul class="list-non-bulleted">
-          <li class="list-inline">
-            <a class="link link-active" href="/">Home</a>
+          <li>
+            <a href="projects.html">Projects</a>
           </li>
-          <li class="list-inline">
-            <a class="link" href="./projects.html">Projects</a>
-          </li>
-          <li class="list-inline">
-            <a class="link" href="./blogs.html">Blogs</a>
+          <li>
+            <a href="blogs.html">Blogs</a>
           </li>
         </ul>
-      </div>
-    </nav>
 
-
-    <!-- Header -->
-    <header>
-      <div class="hero">
-        <img
-          class="hero-img"
-          src="./images/hero.svg"
-          alt="header image coding boy"
-        />
-
-        <div>
-          <div class="typewriter">
-            <h1 class="hero-name">Viresh Fegade</h1>
-            <h1 class="hero-description">A Web Developer</h1>
-          </div>
-          <a href="#technologies" class="hero-btn custom-btn hero-btn-link">
-            <!-- <a class="hero-btn-link" href="#technologies">Know More</a> -->
-            <span>Know More</span>
-          </a>
+        <div class="hamburger-menu float-right">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
         </div>
+      </nav>
+      <script src="scripts/navbar.js"></script>
+    </section>
+    
+    <div class="background-div">
+      <video class="video-div" src="media/bg-dark.mp4" autoplay loop muted></video>
+    </div>
+    <div class="hero-content">
+      <img src="media/favicon.webp" alt="viresh's image" class="hero-img" />
+      <div>
+        <h1 class="hero-heading">Viresh Fegade</h2>
+        <h2 class="hero-role"> Web Developer</h2>
+        <a href="#technologies" class="hero-btn custom-btn hero-btn-link">
+          <span>Know More</span>
+        </a>
       </div>
-    </header>
+    </div>
 
     <main>
       <!-- Technologies -->
@@ -58,70 +79,71 @@
         class="container container-center section-technologies"
       >
         <h1 class="section-heading">Technologies</h1>
-        <h3 class="section-description">I'm familiar with</h3>
+        <h2 class="section-description">I'm familiar with</h2>
         <div class="container-technologies">
           <div>
             <img
               class="section-technologies-img"
-              src="./images/technology.png"
-              alt="computer image"
+              src="./media/technology.webp"
+              alt="image describing technologies"
             />
           </div>
           <div class="technologies-grid">
             <div class="tech-card">
               <img
                 class="technology-img"
-                src="./images/technologies/python.png"
+                src="./media/technologies/python.png"
+                alt="python icon"
               />
               <p>Python</p>
             </div>
             <div class="tech-card">
-              <img class="technology-img" src="./images/technologies/js.svg" />
+              <img class="technology-img" src="./media/technologies/js.svg"  alt="javascript icon"/>
               <p>Javascript</p>
             </div>
             <div class="tech-card">
               <img
                 class="technology-img"
-                src="./images/technologies/html5.svg"
+                src="./media/technologies/html5.svg" alt="html5 icon"
               />
               <p>HTML</p>
             </div>
             <div class="tech-card">
               <img
                 class="technology-img"
-                src="./images/technologies/css3.svg"
+                src="./media/technologies/css3.svg" alt="css3 icon"
               />
               <p>CSS</p>
             </div>
             <div class="tech-card">
               <img
                 class="technology-img"
-                src="./images/technologies/react.svg"
+                src="./media/technologies/react.svg" alt="reactjs-icon"
               />
               <p>React.js</p>
             </div>
             <div class="tech-card">
               <img
                 class="technology-img"
-                src="./images/technologies/nodejs.svg"
+                src="./media/technologies/nodejs.svg" alt="nodejs icon"
               />
               <p>Node.js</p>
             </div>
             <div class="tech-card">
-              <img class="technology-img" src="./images/technologies/git.svg" />
+              <img class="technology-img" src="./media/technologies/git.svg"  alt="git-icon"/>
               <p>Git</p>
             </div>
             <div class="tech-card">
               <img
                 class="technology-img"
-                src="./images/technologies/mysql.svg"
+                src="./media/technologies/mysql.svg" alt="mysql-icon"
               />
               <p>MySQL</p>
             </div>
             <div class="tech-card">
               <img
                 class="technology-img"
-                src="./images/technologies/netlify.svg"
+                src="./media/technologies/netlify.svg" alt="netlify-icon"
               />
               <p>Hosting</p>
             </div>
@@ -134,14 +156,14 @@
       <section class="section-work container container-center">
         <div class="section-title">
           <h1 class="section-heading">My work</h1>
-          <h3 class="section-description">
+          <h2 class="section-description">
             I love to build projects and write blogs
-          </h3>
+          </h2>
         </div>
 
         <div class="section-info">
           <div class="work-card">
-            <img src="./images/projects.svg" alt="projects icon" class="work-image" />
+            <img src="./media/projects.svg" alt="boy using laptop" class="work-image" />
             <p class="work-title mt-3">Projects</p>
             <p class="work-subtitle">
               I like to showcase my work and thus, you can see my projects
@@ -154,8 +176,8 @@
 
           <div class="work-card">
             <img
-              src="./images/blogs.svg"
-              alt="blog icon"
+              src="./media/blogs.svg"
+              alt="boy showing blogs on laptop"
               class="work-image extra-space-2"
             />
             <p class="work-title extra-space-2">Blogs</p>
@@ -175,43 +197,24 @@
     <footer class="footer">
       <div class="name">Get In Touch With Me</div>
       <div>
-        <ul class="list-non-bulleted">
+        <ul class="list-unstyled list-inline text-center">
           <li class="list-inline">
-            <a
-              class="link link-active"
-              href="https://github.com/viru2001"
-              target="_blank"
-              ><img src="./images/footer-icons/github.svg" alt="github icon"
-            /></a>
+            <a href="https://twitter.com/fegade_viresh" target="_blank" rel="noopener" class="icon-button twitter"><i
+                class="fab fa-twitter"></i> <span></span></a>
           </li>
           <li class="list-inline">
-            <a
-              class="link"
-              href="https://www.linkedin.com/in/viresh-fegade-43a475148/"
-              target="_blank"
-              ><img
-                src="./images/footer-icons/linkedin.svg"
-                alt="linkedin icon"
-            /></a>
+            <a href="https://github.com/viru2001" target="_blank" rel="noopener"
+              class="icon-button github"><i class="fab fa-github"></i><span></span></a>
           </li>
           <li class="list-inline">
-            <a
-              class="link"
-              href="https://twitter.com/fegade_viresh"
-              target="_blank"
-              ><img src="./images/footer-icons/twitter.svg" alt="twitter icon"
-            /></a>
+            <a href="https://www.instagram.com/vireshfegade/" target="_blank" rel="noopener"
+              class="icon-button instagram"><i class="fab fa-instagram"></i><span></span></a>
           </li>
           <li class="list-inline">
-            <a
-              class="link"
-              href="https://www.instagram.com/vireshfegade/"
-              target="_blank"
-              ><img
-                src="./images/footer-icons/instagram.svg"
-                alt="instagram icon"
-            /></a>
+            <a href="https://www.linkedin.com/in/viresh-fegade-43a475148/" target="_blank" rel="noopener"
+              class="icon-button linkedin"><i class="fab fa-linkedin"></i><span></span></a>
           </li>
+
         </ul>
       </div>
     </footer>

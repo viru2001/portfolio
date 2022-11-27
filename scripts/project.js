@@ -2,81 +2,72 @@ const projectsGrid = document.querySelector("#projects-grid");
 
 const projects = [
   {
+    image: "./media/projects/video-library-app.png",
+    name: "GameTube",
+    desc: "• This is video library app in which user can see explore page with all videos and filter them based on categories, implemented playlist and like-dislike management, also user can add video to watch later and also can track watch history. \n • Tech Stack : ReactJS, Material UI, mockBee (https://mockbee.netlify.app/)",
+    liveLink: "https://gametube.netlify.app/",
+    sourceLink: "https://github.com/viru2001/gametube",
+  },
+  {
+    image: "./media/projects/ecom-app.png",
+    name: "Gamers Zone",
+    desc: "• This is ecom app where user can use product listing page with various filters like price range,category & rating and Implemented wishlist and cart management \n • Tech Stack : ReactJS, CSS, Cool UI (https://cool-ui.netlify.app/) , mockBee (https://mockbee.netlify.app/)",
+    liveLink: "https://gamers-zone-ecom.netlify.app/",
+    sourceLink: "https://github.com/viru2001/gamers-zone-ecom",
+  },
+  {
+    image: "./media/projects/notes-app.png",
+    name: "Keep Notes",
+    desc: "• This is notes app where user can perform CRUD operations, user can use rich text editor, user can add colors to notes and also Implemented archive and trash notes management \n • Tech Stack : ReactJS, CSS, Cool UI (https://cool-ui.netlify.app/) , mockBee (https://mockbee.netlify.app/)",
+    liveLink: "https://keep-notes-viresh.netlify.app/",
+    sourceLink: "https://github.com/viru2001/keep-notes",
+  },
+  {
+    image: "./media/projects/plan-your-day-extension.png",
+    name: "Plan Your Day",
+    desc: "• This is browser extension where user can set focus of the day and also set todos, user can see current weather. The background and quote keeps changing on refresh of the page. \n • Tech Stack : ReactJS, Material UI",
+    liveLink: "https://addons.mozilla.org/en-US/firefox/addon/plan-your-day/",
+    sourceLink: "https://github.com/viru2001/plan-your-day",
+  },
+  {
+    image: "./media/projects/cool-ui.png",
+    name: "Cool UI",
+    desc: "• This is Pure CSS component library for creating beautiful UI consist of 10+ components \n • Tech Stack : HTML, CSS, JavaScript",
+    liveLink: "https://cool-ui.netlify.app/",
+    sourceLink: "https://github.com/viru2001/Cool-UI",
+  },
+  {
     image: "./media/projects/periodic-table.png",
     name: "Periodic Table",
-    desc: "This is periodic table made using HTML, CSS and JS which displays all properties of elements of periodic table and also classifies elements based on their properties.",
-    liveLink: "  https://viru2001.github.io/periodicTable/",
-    sourceLink:"https://github.com/viru2001/periodicTable"
+    desc: "• This is periodic table made using HTML, CSS and JS which displays all properties of elements of periodic table and also classifies elements based on their properties.  \n • Tech Stack : HTML, CSS, JavaScript",
+    liveLink: " https://viru2001.github.io/periodicTable/",
+    sourceLink: "https://github.com/viru2001/periodicTable",
   },
 
   {
     image: "./media/projects/task-tracker.png",
     name: "Task Tracker",
-    desc: "This app is made using ReactJS and Firebase where user can schedule his/her tasks to do with date and time. Also there are some stats , user can keep track of how many total tasks he/she has done and if user complete a task, level is increased",
+    desc: "• In this app user can schedule his/her tasks to do with date and time. Also there are some stats , user can keep track of how many total tasks he/she has done and if user complete a task, level is increased  \n • Tech Stack : ReactJS, NodeJS, Firebase",
     liveLink: "https://viru2001.github.io/task-tracker/",
-    sourceLink:"https://github.com/viru2001/task-tracker"
-  },
-  {
-    image: "./media/projects/weather.png",
-    name: "Weather App",
-    desc: "This app is made using ReactJS and openWeather API where we can see current temperature of various cities around the world along with sunset and sunrise time,humidity,pressure and visibility",
-    liveLink: "  https://viru2001.github.io/weather-app/",
-    sourceLink:"https://github.com/viru2001/weather-app"
+    sourceLink: "https://github.com/viru2001/task-tracker",
   },
   {
     image: "./media/projects/solecthon-website.png",
     name: "VCET Solecthon",
-    desc: "This is website of a driverless Solar Electric Car Team of VCET college built using HTML, CSS, JS , Bootstrap and JQuery.",
+    desc: "• This is website of a driverless Solar Electric Car Team of VCET college.  \n • Tech Stack : HTML, CSS, JavaScript, Bootstrap and JQuery",
     liveLink: "https://vcet.edu.in/VcetSolecthon/index.html",
-    sourceLink:"https://github.com/viru2001/SolecthonWebsite"
+    sourceLink: "https://github.com/viru2001/SolecthonWebsite",
   },
-  {
-    image: "./media/projects/stock-profit-loss.png",
-    name: "Stock Profit or Loss",
-    desc: "Stock Profit Loss app built using Vanilla JS, HTML and CSS tells how much profit or loss you have made.",
-    liveLink: "https://stock-profit-or-loss-viresh.netlify.app",
-    sourceLink:"https://github.com/viru2001/stock-profit-or-loss-calculator"
-  },
-  {
-    image: "./media/projects/pallindrome-bday.png",
-    name: "Palindrome Birthday",
-    desc: "Palindrome Birthday App which tells whether your birthday is a plaindrome or not which is Built using Vanilla JS, HTML and CSS",
-    liveLink: "https://pallindrome-birthday-viresh.netlify.app",
-    sourceLink: "https://github.com/viru2001/pallindrome-birthday"
-  },
-  {
-    image: "./media/projects/cash-register.png",
-    name: "Cash Register",
-    desc: "A web app which takes the bill amount and the cash paid as the input and gives the minimum number of notes of each denomination to be returned. Built using Vanilla JS, HTML and CSS.",
-    liveLink: "https://cash-register-viresh.netlify.app/",
-    sourceLink: "https://github.com/viru2001/cash-register"
-  },
-  {
-    image: "./media/projects/animal-emoji.png",
-    name: "Animal Emoji Interpreter",
-    desc: "A web app which tells the name of the animal upon entering its emoji. Built using React.js",
-  
-    liveLink: "https://animal-emoji-interpreter-viresh.netlify.app",
-    sourceLink: "https://github.com/viru2001/animal-emoji-interpreter"
-  },
-  {
-    image: "./media/projects/ferb-latin-talk.png",
-    name: "Ferb-Latin Talk",
-    desc: "A web app which converts English to ferb latin language using vanila JS and fun tranlsations API.",
-  
-    liveLink: "https://ferb-latin-talk-viresh.netlify.app",
-    sourceLink: "https://github.com/viru2001/ferb-latin-talk"
-  }
 ];
 
-projects.map((project) => {
+projects.map(project => {
   let projectCardDiv = document.createElement("div");
   projectCardDiv.className = "project-card";
 
   let image = document.createElement("img");
-  image.className="project-image";
+  image.className = "project-image";
   image.src = project.image;
-  image.alt = project.name + " scrrenshot"
+  image.alt = project.name + " scrrenshot";
   projectCardDiv.appendChild(image);
 
   let projectTitle = document.createElement("p");
@@ -89,7 +80,6 @@ projects.map((project) => {
   projectDesc.innerText = project.desc;
   projectCardDiv.appendChild(projectDesc);
 
-
   let liveDemoBtn = document.createElement("a");
   liveDemoBtn.className = "btn btn-primary";
   liveDemoBtn.style.color = "#fff";
@@ -98,7 +88,7 @@ projects.map((project) => {
   liveDemoBtn.href = project.liveLink;
   liveDemoBtn.target = "_blank";
   liveDemoBtn.innerText = "Live Demo";
-  liveDemoBtn.rel="noopener";
+  liveDemoBtn.rel = "noopener";
   projectCardDiv.appendChild(liveDemoBtn);
 
   let sourceCodeBtn = document.createElement("a");
@@ -109,10 +99,8 @@ projects.map((project) => {
   sourceCodeBtn.href = project.sourceLink;
   sourceCodeBtn.target = "_blank";
   sourceCodeBtn.innerText = "Source Code";
-  sourceCodeBtn.rel="noopener";
+  sourceCodeBtn.rel = "noopener";
   projectCardDiv.appendChild(sourceCodeBtn);
-
 
   projectsGrid.appendChild(projectCardDiv);
 });
-
